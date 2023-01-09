@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_nav_graph"
+    app:startDestination="@id/newsListFragment">
+
+    <fragment
+        android:id="@+id/newsListFragment"
+        android:name="com.example.divulgeadmin.ui.fragments.ExclusiveNewsListFragment"
+        android:label="fragment_news_upsert"
+        tools:layout="@layout/fragment_exclusive_news_upsert">
+        <action
+            android:id="@+id/action_newsListFragment_to_newsUpsertFragment"
+            app:destination="@id/newsUpsertFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsUpsertFragment"
+        android:name="com.example.divulgeadmin.ui.fragments.ExclusiveNewsUpsertFragment"
+        android:label="NewsUpsertFragment" >
+        <argument
+            android:name="exclusiveNews"
+            app:argType="com.example.divulgeadmin.models.ExclusiveNews"
+            app:nullable="true" />
+        <argument
+            android:name="formSubmitMode"
+            app:argType="string"
+            android:defaultValue="add" />
+    </fragment>
+</navigation>

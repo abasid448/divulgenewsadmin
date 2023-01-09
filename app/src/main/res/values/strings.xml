@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">divulgeadmin</string>
+
+
+    <!-- Error messages-->
+    <string name="registration_failed_please_check_entered_phone_number">Registration failed, please check entered phone number</string>
+    <string name="please_check_your_internet_connection">Please check your internet connection</string>
+
+    <!-- User Activity-->
+    <string name="discover_your_daily_news_here">Get in touch with Daily News</string>
+    <string name="explore_all_the_most_exiting_news_based_on_your_interest_and_country">Get more news based on your interests </string>
+    <string name="register_with_your_mobile_number">Register with your phone number</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="change_phone_number">Change phone number</string>
+    <string name="logout">Logout</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="breaking_news">HeadLines</string>
+    <string name="saved_news">Saved News</string>
+    <string name="exclusive_news">Exclusive For You</string>
+</resources>

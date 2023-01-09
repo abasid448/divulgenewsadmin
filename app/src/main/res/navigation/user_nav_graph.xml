@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/user_nav_graph"
+    app:startDestination="@id/userWelcomeFragment">
+
+    <fragment
+        android:id="@+id/userWelcomeFragment"
+        android:name="com.example.divulgeadmin.ui.fragments.UserWelcomeFragment"
+        android:label="UserWelcomeFragment">
+        <action
+            android:id="@+id/action_userWelcomeFragment_to_userMobileNumberFragment"
+            app:destination="@id/userMobileNumberFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/userMobileNumberFragment"
+        android:name="com.example.divulgeadmin.ui.fragments.UserMobileNumberFragment"
+        android:label="UserMobileNumberFragment">
+        <action
+            android:id="@+id/action_userMobileNumberFragment_to_verifyOtpFragment"
+            app:destination="@id/verifyOtpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyOtpFragment"
+        android:name="com.example.divulgeadmin.ui.fragments.VerifyOtpFragment"
+        android:label="VerifyOtpFragment" />
+</navigation>
